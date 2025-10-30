@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FullStackCI</name>
+    </assembly>
+    <members>
+        <member name="P:FullStackCI.Models.Author.Id">
+            <summary>
+            Id del autor
+            </summary>
+        </member>
+        <member name="P:FullStackCI.Models.Author.Name">
+            <summary>
+            Nombre del autor
+            </summary>
+        </member>
+        <member name="P:FullStackCI.Models.Author.Nationality">
+            <summary>
+            Nacionalidad del autor
+            </summary>
+        </member>
+        <member name="P:FullStackCI.Models.Author.BirthYear">
+            <summary>
+            Anno nacimiento del autor
+            </summary>
+        </member>
+        <member name="P:FullStackCI.Models.Author.Books">
+            <summary>
+            Libros del autor
+            </summary>
+        </member>
+        <member name="T:FullStackCI.Repositories.AuthorCommandRepository">
+            <summary>
+            Clase de command de autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorCommandRepository.#ctor(FullStackCI.Data.ApplicationDbContext)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorCommandRepository.CreateAsync(FullStackCI.Models.Author)">
+            <summary>
+            Crear autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorCommandRepository.UpdateAsync(FullStackCI.Models.Author)">
+            <summary>
+            Actualizar autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorCommandRepository.DeleteAsync(System.Int32)">
+            <summary>
+            Eliminar autor
+            </summary>
+        </member>
+        <member name="T:FullStackCI.Repositories.AuthorRepository">
+            <summary>
+            Clase de repositorio de autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorRepository.#ctor(FullStackCI.Data.ApplicationDbContext)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorRepository.GetAllAsync">
+            <summary>
+            Obtener autores
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorRepository.GetByIdAsync(System.Int32)">
+            <summary>
+            Obtener autores por id
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Repositories.AuthorRepository.ExistsAsync(System.Int32)">
+            <summary>
+            Comprobar si existe
+            </summary>
+        </member>
+        <member name="T:FullStackCI.Services.AuthorCommandService">
+            <summary>
+            Clase command service
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorCommandService.#ctor(FullStackCI.Repositories.IUnitOfWork)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorCommandService.CreateAuthorAsync(FullStackCI.Dtos.CreateAuthorDto)">
+            <summary>
+            Crear autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorCommandService.UpdateAuthorAsync(System.Int32,FullStackCI.Dtos.CreateAuthorDto)">
+            <summary>
+            actualizar autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorCommandService.DeleteAuthorAsync(System.Int32)">
+            <summary>
+            eliminar autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorCommandService.ConvertToDto(FullStackCI.Models.Author)">
+            <summary>
+            Convertir DTO
+            </summary>
+        </member>
+        <member name="T:FullStackCI.Services.AuthorService">
+            <summary>
+            Clase servicio de autor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorService.#ctor(FullStackCI.Repositories.IUnitOfWork)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorService.GetAllAuthorsAsync">
+            <summary>
+            obtener todos los autores
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorService.GetAuthorByIdAsync(System.Int32)">
+            <summary>
+            Obtener autor por id
+            </summary>
+        </member>
+        <member name="M:FullStackCI.Services.AuthorService.ConvertToDto(FullStackCI.Models.Author)">
+            <summary>
+            Convetir DTO
+            </summary>
+        </member>
+    </members>
+</doc>
